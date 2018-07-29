@@ -1,0 +1,18 @@
+plugins {
+    id 'com.github.blindpirate.gogradle' version '0.8.0'
+}
+golang {
+    packagePath = 'gitee.com/johng/gf' // go import path of project to be built, NOT local file system path!
+}
+
+build.dependsOn check 
+
+build {
+    targetPlatform = ['linux-386', 'windows-amd64', 'darwin-amd64']
+    go 'build -o ./StringReverse_${GOOS}_${GOARCH}${GOEXE} github.com/my/package/main'
+}
+
+dependencies {
+    golang {
+    }
+}
