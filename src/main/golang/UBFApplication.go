@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	//configor.Load(&Config, "config.yml")
+
+	//configor.Load(&config.YmlConfig, "application.yml")
 	s := g.Server()
 	s.BindHandler("/", func(r *ghttp.Request) {
 		r.Response.Write("哈喽世界！")

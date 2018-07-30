@@ -13,4 +13,3 @@ dependencies {
         build 'github.com/jinzhu/configor'
     }
 }
-
