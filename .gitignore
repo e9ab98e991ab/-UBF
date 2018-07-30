@@ -98,6 +98,4 @@ gen### Go template
 *.out
 
 .gogradle/
-.gradle/
 build/
-src/main/resources/

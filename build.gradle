@@ -3,35 +3,13 @@ plugins {
 }
 
 golang {
-    packagePath = 'gitee.com/johng/gf' // 欲构建项目的go import path，注意不是本地目录的路径！
+    packagePath = 'github.com/e9ab98e991ab/UBF' // 欲构建项目的go import path，注意不是本地目录的路径！
+
 }
-
-
-///************** sourcesets **************/
-//sourceSets {
-//    // Note that just declaring this sourceset creates two configurations.
-//    main {
-//        java {
-//            srcDirs += ['src/main/go']
-//        }
-//    }
-//
-//}
-
-//apply plugin: 'com.github.blindpirate.gogradle'
-//buildscript {
-//    dependencies {
-////        classpath files('<path to downloaded jar>')
-//    }
-//}
-//
-//
-//golang {
-//    packagePath = 'gitee.com/johng/gf' // 欲构建项目的path，不是项目的磁盘路径！
-//}
-
 
 dependencies {
     golang {
+        build 'gitee.com/johng/gf'
     }
 }
+

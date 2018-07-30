@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  #项目端口
+  context-path: /api
+
+logging:
+  path: logs/
+  file: UBF.log
+
